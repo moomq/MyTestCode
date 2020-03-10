@@ -1,0 +1,3 @@
+g++ -I../libcurl/include  -std=c++11  ./curl_test.c   -L../libcurl/lib -lcurl -lssl -lcrypto  -O2 -ldl  -o sample_X86_64
+g++ -g curl_test.cpp -o curl_test -lcurl
+

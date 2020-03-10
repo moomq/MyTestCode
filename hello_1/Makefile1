@@ -1,0 +1,27 @@
+#定义变量
+ARCH ?=arm
+TARGET = hello_main
+CFLAGS = -I .
+DEPS = hello_fun.h
+OBJS = hello_main.o hello_fun.o
+
+#根据输入的ARCH变量来选择编译器
+ifeq ($(ARCH),x86)
+	CC = gcc
+else
+	CC = arm-linux-gnueabihf-gcc
+endif
+
+#目标文件
+$(TARGET):$(OBJS)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+#*.o文件生成规则
+%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+#伪目标
+.PHONY: clean
+clean:
+	rm -f *.o hello_main
+
