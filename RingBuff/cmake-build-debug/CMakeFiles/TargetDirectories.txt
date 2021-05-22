@@ -1,0 +1,3 @@
+H:/GitResponsity/MyGitRepository/MyTestCode/RingBuff/cmake-build-debug/CMakeFiles/RingBuff.dir
+H:/GitResponsity/MyGitRepository/MyTestCode/RingBuff/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/GitResponsity/MyGitRepository/MyTestCode/RingBuff/cmake-build-debug/CMakeFiles/rebuild_cache.dir

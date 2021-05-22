@@ -1,0 +1,4 @@
+"E:\Program Files\JetBrains\CLion 2020.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Msys2/msys64/mingw64/bin/mingw32-make.exe -DCMAKE_C_COMPILER=C:/Msys2/msys64/mingw64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/Msys2/msys64/mingw64/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" H:\GitResponsity\MyGitRepository\MyTestCode\RingBuff
+-- Configuring done
+-- Generating done
+-- Build files have been written to: H:/GitResponsity/MyGitRepository/MyTestCode/RingBuff/cmake-build-debug

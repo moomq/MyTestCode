@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+H:/GitResponsity/MyGitRepository/MyTestCode/RingBuff/main.cpp
+iostream
+-
+ringbuff.h
+H:/GitResponsity/MyGitRepository/MyTestCode/RingBuff/ringbuff.h
+
+H:/GitResponsity/MyGitRepository/MyTestCode/RingBuff/ringbuff.h
+
