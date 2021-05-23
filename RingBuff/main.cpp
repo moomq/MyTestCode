@@ -31,12 +31,6 @@ int main() {
     cout<<endl;
     cout<<MyRingbuff.m_pRingBuff->R<<endl;
     cout<<MyRingbuff.m_pRingBuff->W<<endl;
-
-    uint64_t i;
-    char c='d';
-    i=0xfffffffffffff;
-    printf("i:%x\r\n",i&0x1);
-    cout<<"i:"<<i<<" c:"<<c<<endl;
-    printf("c:%x",c);
+    
     return 0;
 }
