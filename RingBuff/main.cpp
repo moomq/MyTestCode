@@ -31,6 +31,5 @@ int main() {
     cout<<endl;
     cout<<MyRingbuff.m_pRingBuff->R<<endl;
     cout<<MyRingbuff.m_pRingBuff->W<<endl;
-    
     return 0;
 }
