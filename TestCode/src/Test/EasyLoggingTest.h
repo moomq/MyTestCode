@@ -1,0 +1,8 @@
+//
+// Created by moomq on 2021/5/26.
+//
+
+#ifndef TESTCODE_EASYLOGGINGTEST_H
+#define TESTCODE_EASYLOGGINGTEST_H
+
+#endif //TESTCODE_EASYLOGGINGTEST_H

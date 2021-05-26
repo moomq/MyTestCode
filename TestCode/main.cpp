@@ -11,13 +11,15 @@ using namespace std;
 #define ELPP_LOG_UNORDERED_MAP
 #define ELPP_UNORDERED_SET
 #include "src/EasyLoggingCpp/easylogging++.h"
+#include "src/Test/MultiTimerTest.h"
 INITIALIZE_EASYLOGGINGPP
 
 //TIMED_SCOPE(appTimer, "myapplication");
 
-void hello()
+void test()
 {
-    cout<<"hello1"<<endl;
+    char arr[] = "gfdgjhvcjdk";
+    cout<<sizeof(arr)<<endl;
 }
 
 void good()
@@ -37,23 +39,24 @@ void LogInit()
 
 /* 填充命令结构体数组 */
 CMD my_cmds[] = {
-        {"hello", hello},
+        {"test", test},
         {"good", good},
-        {"easylog",easylog}
+        {"easylog",easylog},
+        {"TimerTest", TimerTest}
 };
 
 int main(int argc, char *argv[]) {
 
     LogInit();
-    LOG(INFO)<< "My first info log using default logger";
     /* 注册命令 */
     register_cmds(my_cmds, ARRAY_SIZE(my_cmds));
+
 
     while (true)
     {
         /* 获取命令字符串 */
         string str;
-        cout<<"please input your cmd."<<endl;
+        cout<<"[cmd]$";
         getline(cin,str);
 
         /* 匹配命令并执行 */

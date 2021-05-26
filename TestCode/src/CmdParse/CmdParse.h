@@ -11,7 +11,7 @@
 #define ARRAY_SIZE(x)	(sizeof(x) / (sizeof((x)[0])))
 
 typedef void (*CmdFunc_Type)(void);        // 命令操作函数指针类型
-
+//typedef int (*CmdFunc_Type)(int argc,char *argv);        // 命令操作函数指针类型
 /* 命令结构体类型 */
 typedef struct{
     char cmd_name[MAX_CMD_NAME_LENGTH + 1];   // 命令名

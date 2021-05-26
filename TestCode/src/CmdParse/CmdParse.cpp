@@ -3,17 +3,6 @@
 //
 
 #include "CmdParse.h"
-/******************************************************************************
-* 文件名称： cmd.c
-* 摘 要：    命令解析器定义文件
-* 当前版本： 1.0
-* 作 者：    邵国际
-* 完成日期： 2017年11月18日
-*
-* 取代版本：
-* 原作者 ：
-* 完成日期：
-******************************************************************************/
 #include <cstring>
 #include <iostream>
 
@@ -69,7 +58,7 @@ void match_cmd(const char *str)
             return commands.cmds[i].cmd_func();
         }
     }
-    printf("No Such Command.");
+    printf("No Such Command.\r\n");
 }
 
 void help()
