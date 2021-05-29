@@ -12,15 +12,11 @@ using namespace std;
 #define ELPP_UNORDERED_SET
 #include "src/EasyLoggingCpp/easylogging++.h"
 #include "src/Test/MultiTimerTest.h"
+#include "src/Test/TestBase64.h"
+#include "src/Test/cJsonTest.h"
 INITIALIZE_EASYLOGGINGPP
 
 //TIMED_SCOPE(appTimer, "myapplication");
-
-void test()
-{
-    char arr[] = "gfdgjhvcjdk";
-    cout<<sizeof(arr)<<endl;
-}
 
 void good()
 {
@@ -31,6 +27,11 @@ void easylog()
     LOG(INFO) << "Test " << __FILE__;
 }
 
+void Base64test()
+{
+    testbase64();
+}
+
 void LogInit()
 {
     el::Configurations conf("../log_cfg/console.conf");
@@ -39,10 +40,11 @@ void LogInit()
 
 /* 填充命令结构体数组 */
 CMD my_cmds[] = {
-        {"test", test},
         {"good", good},
         {"easylog",easylog},
-        {"TimerTest", TimerTest}
+        {"timer", TimerTest},
+        {"base64", Base64test},
+        {"json",cJSONTest},
 };
 
 int main(int argc, char *argv[]) {
