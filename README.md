@@ -1,2 +1,2 @@
 # MyTestCode
-lerning C/C++/Python
+Lerning C/C++/Python
