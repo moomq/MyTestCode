@@ -1,5 +1,5 @@
-#/dis/    —— 过滤整个文件夹
-#*.zip    ——过滤所有.zip 的文件
-#/.gitignore  ——过滤某个具体文件
-./RingBuff/cmake-build-debug/
- TestCode/cmake-build-debug/
+/TestCode/src/.idea/.gitignore
+/TestCode/src/cmake-build-debug
+/TestCode/src/include/.idea
+/TestCode/src/include/cmake-build-debug
+/TestCode/src/.idea
